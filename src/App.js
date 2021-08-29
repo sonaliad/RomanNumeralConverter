@@ -1,27 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 import ConvertInput from "./components/convertInput";
-import ConvertOutput from "./components/convertOutput";
-import convertToRoman from "./utils/converToRoman";
+import convertToRoman from "./utils/convertToRoman";
 import convertToNumeral from "./utils/convertToNumeral";
-import { useState } from 'react';
+import { useState} from 'react';
 
 function App() {
   const [romanValue, setRomanValue] = useState();
+  const [numeralValue, setNumeralValue] = useState();
 
-  const handleInput= (e)=> {
-    let result = convertToRoman(e.target.value);
-    setRomanValue({romanValue : result});
+  const handleUserKeyPress = (val) => {
+    let resultRoman = convertToRoman(val);
+    setRomanValue(resultRoman);
+    console.log(romanValue);
   }
-  
+
+  const handleUserKeyPressRoman = (val) => {
+    let resultNumeral = convertToNumeral(val);
+    setNumeralValue(resultNumeral);
+    console.log(numeralValue);
+  }
+
   return (
-    <div className="App">
-       <div className="App container">
-          <h1 className="container__label">Roman Numeral Converter</h1>
-          <ConvertInput onChange={handleInput} />
-          <ConvertOutput value={romanValue} />
-        </div>
+    <div className="main">
+      <h1>Roman Numeral Converter</h1>
+      <ConvertInput
+        name="numeral"
+        onChange={e => { setNumeralValue(e.target.value); handleUserKeyPress(e.target.value) }}
+        value={numeralValue}
+        placeholder="Enter Numeric value" />
+      <ConvertInput
+        name="roman"
+        onChange={e => { setRomanValue((e.target.value).toUpperCase()); handleUserKeyPressRoman(e.target.value) }}
+        value={romanValue}
+        placeholder="Enter Roman value" />
     </div>
+
   );
 }
 

@@ -20,7 +20,9 @@ function convertToRoman(num) {
     const findElement = e => {
       return e <= num;
     };
-  
+    if(num > 3999){
+      return "Enter a number between 1 and 3999";
+    }
     while (num > 0) {
       let nextHighest = numberArr.find(findElement);
   
