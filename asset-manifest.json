@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RomanNumeralConverter/static/css/main.a6e13c3d.chunk.css",
+    "main.js": "/RomanNumeralConverter/static/js/main.3f049b82.chunk.js",
+    "main.js.map": "/RomanNumeralConverter/static/js/main.3f049b82.chunk.js.map",
+    "runtime-main.js": "/RomanNumeralConverter/static/js/runtime-main.a96f6f57.js",
+    "runtime-main.js.map": "/RomanNumeralConverter/static/js/runtime-main.a96f6f57.js.map",
+    "static/js/2.a5eb2806.chunk.js": "/RomanNumeralConverter/static/js/2.a5eb2806.chunk.js",
+    "static/js/2.a5eb2806.chunk.js.map": "/RomanNumeralConverter/static/js/2.a5eb2806.chunk.js.map",
+    "index.html": "/RomanNumeralConverter/index.html",
+    "static/css/main.a6e13c3d.chunk.css.map": "/RomanNumeralConverter/static/css/main.a6e13c3d.chunk.css.map",
+    "static/js/2.a5eb2806.chunk.js.LICENSE.txt": "/RomanNumeralConverter/static/js/2.a5eb2806.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a96f6f57.js",
+    "static/js/2.a5eb2806.chunk.js",
+    "static/css/main.a6e13c3d.chunk.css",
+    "static/js/main.3f049b82.chunk.js"
+  ]
+}
